@@ -7,7 +7,7 @@
 - 🎯 My goal is to become a skilled **Software Engineer** with strong problem-solving and real-world project experience.  
 - 📚 I enjoy building functional, responsive, and user-friendly applications from scratch.  
 - 💬 I'm open to collaboration and learning new tools, frameworks, and best practices in modern web development.  
-- 📫 Reach me at: [kc720562@gmail.com](mailto:kc720562@gmail.com)
+- 📫 Reach me at: [rkc720562@gmail.com](mailto:rkc720562@gmail.com)
 
 ---
 
