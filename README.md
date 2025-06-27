@@ -3,11 +3,11 @@
 
 ---
 
-- 🌱 I’m currently learning **HTML, CSS, JavaScript, and Backend**
-- 🎯 Goal: Become a Software Engineer with a Big Package 💼
-- 💬 Ask me about **Web Development, GitHub, Python (basic)**
-- 📫 How to reach me: **kc720562@gmail.com**
-- ⚡ Fun fact: I started coding while in 12th class 💪
+- 👨‍💻 I am focused on mastering **Full Stack Web Development** including HTML, CSS, JavaScript, and backend technologies.  
+- 🎯 My goal is to become a skilled **Software Engineer** with strong problem-solving and real-world project experience.  
+- 📚 I enjoy building functional, responsive, and user-friendly applications from scratch.  
+- 💬 I'm open to collaboration and learning new tools, frameworks, and best practices in modern web development.  
+- 📫 Reach me at: [kc720562@gmail.com](mailto:kc720562@gmail.com)
 
 ---
 
