@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Marks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f7971e 0%, #ffd200 100%);
+            min-height: 100vh;
+            width: 100vw;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        h2 {
+            color: #185a9d;
+            margin-top: 32px;
+        }
+        .container {
+            background: #fff;
+            padding: 28px 18px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+            margin: 32px 0 24px 0;
+            width: 85%;
+            max-width: 340px;
+            min-width: 200px;
+            min-height: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            font-weight: bold;
+            color: #185a9d;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #185a9d;
+            border-radius: 6px;
+            margin: 6px 0 12px 0;
+            width: 95%;
+            max-width: 320px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 17px;
+            background: #185a9d;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 12px;
+            transition: background 0.3s, transform 0.2s;
+            width: 95%;
+            max-width: 320px;
+        }
+        button:hover {
+            background: #f7971e;
+            color: #185a9d;
+            transform: scale(1.05);
+        }
+        .result {
+            margin-top: 18px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            min-height: 28px;
+            width: 100%;
+            text-align: center;
+            word-break: break-word;
+        }
+        @media (max-width: 600px) {
+            .container {
+                max-width: 99vw;
+                padding: 14px 2vw;
+                min-height: 180px;
+            }
+            input[type="number"], button {
+                max-width: 99vw;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Marks</h2>
+        <label for="php">PHP (out of 100):</label>
+        <input type="number" id="php" min="0" max="100" placeholder="Enter PHP marks">
+        <label for="python">Python (out of 100):</label>
+        <input type="number" id="python" min="0" max="100" placeholder="Enter Python marks">
+        <label for="dotnet">.NET (out of 100):</label>
+        <input type="number" id="dotnet" min="0" max="100" placeholder="Enter .NET marks">
+        <label for="java">Java (out of 100):</label>
+        <input type="number" id="java" min="0" max="100" placeholder="Enter Java marks">
+        <label for="c">C (out of 100):</label>
+        <input type="number" id="c" min="0" max="100" placeholder="Enter C marks">
+        <label for="cpp">C++ (out of 100):</label>
+        <input type="number" id="cpp" min="0" max="100" placeholder="Enter C++ marks">
+        <button onclick="calculateResult()">Show Result</button>
+        <div class="result" id="output"></div>
+    </div>
+    <script>
+        function calculateResult() {
+            var php = Number(document.getElementById('php').value);
+            var python = Number(document.getElementById('python').value);
+            var dotnet = Number(document.getElementById('dotnet').value);
+            var java = Number(document.getElementById('java').value);
+            var c = Number(document.getElementById('c').value);
+            var cpp = Number(document.getElementById('cpp').value);
+
+            var total = php + python + dotnet + java + c + cpp;
+            var percentage = (total / 600) * 100;
+            var grade = "";
+
+            if (percentage >= 90) grade = "A+";
+            else if (percentage >= 80) grade = "A";
+            else if (percentage >= 70) grade = "B";
+            else if (percentage >= 60) grade = "C";
+            else if (percentage >= 50) grade = "D";
+            else grade = "Fail";
+
+            document.getElementById('output').innerHTML =
+                "Total Marks: <b>" + total + " / 600</b><br>" +
+                "Percentage: <b>" + percentage.toFixed(2) + "%</b><br>" +
+                "Grade: <b>" + grade + "</b>";
+        }
+    </script>
+</body>
+</html>
