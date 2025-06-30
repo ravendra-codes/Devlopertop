@@ -63,4 +63,4 @@
 
 ---
 
-<p align="center">✨ Made with ❤️ by Ravendra Kumar</p>
+## ⭐ If you like this portfolio, give it a ⭐ and share it with others!
