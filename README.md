@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1_s4X2hs9KZPDy1ea-3J8jtHDBwfy0WYQg&s" alt="Portfolio Preview" width="30%" />
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1_s4X2hs9KZPDy1ea-3J8jtHDBwfy0WYQg&s" alt="Portfolio Preview" width="10%" />
 </p>
 
 ---
